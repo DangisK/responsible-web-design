@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 id="title" class="header__title">freeCodeCamp Survey Form</h1>
+        <p class="header__paragraph" id="description">
+          Thank you for taking the time to help us improve the platform
+        </p>
+      </header>
+      <div class="form-conteiner">
+        <form id="survey-form" class="survey-form" action="" method="get">
+          <div class="survey-form__info">
+            <div class="line-gap">
+              <label for="name" id="name-label" class="new-line">Name: </label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Enter your name"
+                class="survey-form__info--input-box"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="survey-form__info">
+            <label id="email-label" for="email" class="new-line">Email: </label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter your Email"
+              class="survey-form__info--input-box"
+              required
+            />
+          </div>
+
+          <div class="survey-form__info">
+            <label id="number-label" for="number" class="new-line"
+              >Age <span class="additional-info">(optional)</span></label
+            >
+            <input
+              type="number"
+              name="age"
+              id="number"
+              placeholder="Age"
+              min="10"
+              max="99"
+              class="survey-form__info--input-box"
+              required
+            />
+          </div>
+
+          <div class="survey-form__info">
+            <p>Which option best describes your current role?</p>
+            <select
+              name="role"
+              id="dropdown"
+              class="survey-form__info--select survey-form__info--input-box"
+              required
+            >
+              <option
+                value=""
+                class="survey-form__info--select"
+                disabled
+                selected
+              >
+                Select current role
+              </option>
+              <option value="student" class="survey-form__info--select">
+                Student
+              </option>
+              <option value="full-time-job" class="survey-form__info--select">
+                Full Time Job
+              </option>
+              <option
+                value="full-time-learner"
+                class="survey-form__info--select"
+              >
+                Full Time Learner
+              </option>
+              <option
+                value="prefer-not-to-say"
+                class="survey-form__info--select"
+              >
+                Prefer not to say
+              </option>
+              <option value="other" class="survey-form__info--select">
+                Other
+              </option>
+            </select>
+          </div>
+
+          <div class="survey-form__info">
+            <p>Would you recommend freeCodeCamp to a friend?</p>
+            <div class="line-gap">
+              <input
+                type="radio"
+                id="definitely"
+                name="recommend"
+                value="definitely"
+                checked
+              />
+              <label for="definitely" class="new-line">Definitely</label>
+            </div>
+            <div class="line-gap">
+              <input type="radio" id="maybe" name="recommend" value="maybe" />
+              <label for="maybe" class="new-line">Maybe</label>
+            </div>
+            <div class="line-gap">
+              <input
+                type="radio"
+                id="not-sure"
+                name="recommend"
+                value="not-sure"
+              />
+              <label for="not-sure" class="new-line">Not sure</label>
+            </div>
+          </div>
+
+          <div class="survey-form__info">
+            <p>What is your favorite feature of freeCodeCamp?</p>
+            <select
+              name="favorite-feature"
+              id="dropdown"
+              class="survey-form__info--select survey-form__info--input-box"
+              required
+            >
+              <option
+                value=""
+                class="survey-form__info--select"
+                disabled
+                selected
+              >
+                Select an option
+              </option>
+              <option value="challenges" class="survey-form__info--select">
+                Challenges
+              </option>
+              <option value="projects" class="survey-form__info--select">
+                Projects
+              </option>
+              <option value="community" class="survey-form__info--select">
+                Community
+              </option>
+              <option value="open-source" class="survey-form__info--select">
+                Open Source
+              </option>
+            </select>
+          </div>
+
+          <div class="survey-form__info">
+            <p>
+              What would you like to see improved?
+              <span class="additional-info">(Check all that apply)</span>
+            </p>
+            <div class="line-gap">
+              <input
+                type="checkbox"
+                name="improve"
+                value="front-end-projects"
+                class="survey-form__info--improvements"
+              />
+              <label for="scales" class="new-line">Front-end Projects</label>
+            </div>
+            <div class="line-gap">
+              <input
+                type="checkbox"
+                name="improve"
+                value="back-end-projects"
+                class="survey-form__info--improvements"
+              />
+              <label for="scales" class="new-line">Back-end Projects</label>
+            </div>
+            <div class="line-gap">
+              <input
+                type="checkbox"
+                name="improve"
+                value="data-visualisation"
+                class="survey-form__info--improvements"
+              />
+              <label for="scales" class="new-line">Data Visualization</label>
+            </div>
+            <div class="line-gap">
+              <input
+                type="checkbox"
+                name="improve"
+                value="improve-challenges"
+              />
+              <label for="scales" class="new-line">Challenges</label>
+            </div>
+            <div class="line-gap">
+              <input
+                type="checkbox"
+                name="improve"
+                value="open-source-community"
+              />
+              <label for="scales" class="new-line">Open Source Community</label>
+            </div>
+            <div class="line-gap">
+              <input type="checkbox" name="improve" value="gitter-help-rooms" />
+              <label for="scales" class="new-line">Gitter help rooms</label>
+            </div>
+            <div class="line-gap">
+              <input type="checkbox" name="improve" value="videos" />
+              <label for="scales" class="new-line">Videos</label>
+            </div>
+            <div class="line-gap">
+              <input type="checkbox" name="improve" value="city-meetups" />
+              <label for="scales" class="new-line">City Meetups</label>
+            </div>
+            <div class="line-gap">
+              <input type="checkbox" name="improve" value="wiki" />
+              <label for="scales" class="new-line">Wiki</label>
+            </div>
+            <div class="line-gap">
+              <input type="checkbox" name="improve" value="forum" />
+              <label for="scales" class="new-line">Forum</label>
+            </div>
+            <div class="line-gap">
+              <input
+                type="checkbox"
+                name="improve"
+                value="additional-courses"
+              />
+              <label for="scales" class="new-line">Additional Courses</label>
+            </div>
+          </div>
+
+          <div class="survey-form__info">
+            <p>Any comments or suggestions?</p>
+            <textarea
+              class="line-gap survey-form__info--suggestion-area"
+              id="additional-comments"
+              name="additional-comments"
+              placeholder="Enter your comment here..."
+            ></textarea>
+          </div>
+
+          <div class="survey-form__info">
+            <button type="submit" id="submit" class="survey-form__submit">
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

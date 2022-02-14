@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  width: 100%;
+  padding: 30px 10px;
+  background: linear-gradient(
+    45deg,
+    rgba(210, 62, 122, 1) 0%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+
+.main {
+  background-color: rgb(230, 230, 230);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  border-radius: 5px;
+  padding: 20px 15px;
+}
+
+.header {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.header__title {
+  font-size: 38px;
+}
+
+.figure__image {
+  max-width: 100%;
+}
+
+.figure {
+  padding: 10px 10px 1px 10px;
+  background-color: white;
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tribute-header {
+  margin-top: 30px;
+}
+
+.header__description {
+  margin-top: 20px;
+}
+
+.text {
+  color: #333;
+}
+
+.figure__caption {
+  margin: 15px 15px;
+  text-align: center;
+}
+
+.bullet-list {
+  margin-top: 40px;
+  width: 550px;
+}
+
+.bullet-list__item {
+  margin-top: 20px;
+}
+
+.bullet-list__item:first-child {
+  margin-top: 0;
+}
+
+.quote {
+  font-style: italic;
+  max-width: 550px;
+  margin-top: 50px;
+  text-align: left;
+}
+
+.quote__cite {
+  margin-top: 50px;
+}
+
+.footer__title {
+  margin-top: 50px;
+}
