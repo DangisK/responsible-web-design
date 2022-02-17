@@ -1,0 +1,266 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: #eee;
+}
+
+.header-logo {
+  height: 50px;
+  width: 300px;
+  object-fit: contain;
+  object-position: 50% 50%;
+  display: grid;
+  align-items: center;
+}
+
+@media screen and (max-width: 1000px) {
+  .header {
+    flex-direction: column;
+  }
+
+  .nav__link-list {
+    align-items: center;
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .nav__link-list {
+    flex-direction: column;
+  }
+  i.material-icons {
+    display: none;
+  }
+
+  .features__item {
+    text-align: center;
+  }
+
+  .pricing {
+  }
+
+  .product {
+    min-width: 300px;
+    margin: 0 auto;
+  }
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 45px;
+  width: 95%;
+  min-width: 300px;
+}
+
+.header {
+  position: sticky;
+  width: 100%;
+  top: 0;
+  background-color: #eee;
+  min-height: 75px;
+  padding: 30px 30px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 300px;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav__item {
+  list-style-type: none;
+}
+
+.nav__link-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 680px;
+}
+
+.header__nav {
+  display: grid;
+  align-items: center;
+}
+
+.form,
+.sign-up {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.submit {
+  height: 30px;
+  width: 150px;
+  margin-top: 20px;
+  cursor: pointer;
+  background-color: rgb(255, 217, 0);
+  border-style: none;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 900;
+}
+
+#email {
+  height: 25px;
+  width: 300px;
+  padding-left: 5px;
+  margin-top: 30px;
+}
+
+.material-icons {
+  font-size: 50px !important;
+  color: darkorange;
+}
+
+i.material-icons {
+  text-align: center;
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.features__item {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+.features__item:first-child {
+  margin-top: 0;
+}
+
+/* .content,
+.pricing {
+  display: flex;
+  margin: auto;
+  margin-top: 100px;
+} */
+
+.content {
+  display: flex;
+  margin: auto;
+  margin-top: 100px;
+}
+
+.pricing {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 100px;
+  width: 100%;
+}
+
+.content {
+  flex-direction: column;
+}
+
+.product {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  /* width: calc(100% / 3); */
+  margin: 10px;
+  border: 1px solid #000;
+  border-radius: 3px;
+  padding-bottom: 15px;
+}
+
+.description {
+  height: 60px;
+  width: 100%;
+  padding-left: 50px;
+}
+
+.how-it-works {
+  display: flex;
+  margin: auto;
+  margin-top: inherit;
+}
+
+.yt-video {
+  height: 320px;
+  width: 580px;
+  border-style: none;
+}
+
+.product__header {
+  background-color: rgb(212, 212, 212);
+  text-transform: uppercase;
+  width: 100%;
+  padding: 15px;
+  font-weight: 700px;
+  color: black;
+}
+
+.product__list-item {
+  list-style: none;
+  margin-top: 15px;
+}
+
+.product > h2 {
+  margin-top: 15px;
+}
+
+.product__select-btn {
+  height: 40px;
+  width: 150px;
+  margin-top: 20px;
+  cursor: pointer;
+  background-color: rgb(255, 217, 0);
+  border-style: none;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.footer {
+  margin-top: 40px;
+  background-color: rgb(206, 206, 206);
+  display: table;
+  text-align: right;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding: 20px 15px 20px 0;
+}
+
+.footer > ol {
+  display: flex;
+  justify-content: right;
+}
+
+.footer > p {
+  margin-top: 5px;
+  font-size: 14px;
+  color: rgb(66, 66, 66);
+}
+
+.footer > ol > li {
+  list-style: none;
+  padding: 0 10px;
+}
+
+.footer > ol > li > a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.sign-up > h2 {
+  text-align: center;
+}
