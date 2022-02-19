@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Asap&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Asap", sans-serif;
+}
+
+:root {
+  --main-text-color: rgb(70, 70, 70);
+  --line-height: 23px;
+}
+
+.nav > ul > li > a {
+  text-decoration: none;
+  color: black;
+}
+
+nav > h2 {
+  text-align: center;
+  font-size: 28px;
+  padding: 10px 20px;
+}
+
+.nav > ul {
+  border: solid 2px rgb(53, 53, 53);
+  list-style: none;
+  margin-top: 10px;
+  padding: 0;
+  height: 200px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  line-height: var(--line-height);
+}
+
+.nav > ul > li {
+  padding: 10px 30px;
+  text-align: center;
+  line-height: var(--line-height);
+}
+
+.nav > ul > li:not(:last-child) {
+  border-bottom: solid 1px black;
+}
+
+.content {
+  padding: 0px 20px 20px;
+}
+
+.content > article > h2 {
+  margin-top: 40px;
+}
+
+.content > article > p {
+  padding: 20px 15px 0;
+  color: var(--main-text-color);
+  line-height: var(--line-height);
+}
+
+.content > article > ul {
+  margin-top: 20px;
+  padding: 0px 33px;
+  color: var(--main-text-color);
+  line-height: var(--line-height);
+}
+
+.content > article > ul > li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.content > article > ul > li > ul {
+  padding: 0 0 0 33px;
+}
+
+.content > article > code {
+  background-color: #f7f7f7;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 5px;
+  display: block;
+  color: var(--main-text-color);
+  line-height: var(--line-height);
+}
+
+.content > article > ul > li > a {
+  color: blue;
+}
+
+@media screen and (min-width: 1024px) {
+  .page-wrapper {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    border: 1px solid black;
+    flex-basis: content;
+  }
+
+  .nav {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+  }
+
+  .content {
+    padding: 0 200px 0 280px;
+  }
+
+  .nav > ul {
+    height: calc(100% - 92px);
+    margin-top: 0;
+  }
+
+  .nav > h2 {
+    border-right: 2px solid black;
+    padding: 30px 0;
+  }
+
+  .nav > ul > li {
+    text-align: left;
+  }
+}
